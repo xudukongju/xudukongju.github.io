@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>画棱形</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            body{
+                font-family: 'Courier New', Courier, monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <script>let n=10
+            for(i=1;i<n;i++){
+                for(a=0;a<n-i;a++){
+                    document.write('&nbsp;')
+                }
+                for(a=0;a<2*i-1;a++){
+                    document.write("*")
+                }
+                document.write("<br>")
+            }
+            for(i=n-1;i>=1;i--){
+                for(a=0;a<n-i;a++){
+                    document.write('&nbsp;')
+                }
+                for(a=0;a<2*i-1;a++){
+                    document.write("*")
+                }
+                document.write("<br>")
+            }
+        </script>
+    </body>
+</html>
