@@ -2,46 +2,210 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人简历</title>
+    <title>黄小嵩 - 个人简历</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0; 
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1{
+            color: #fff;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+
+        .education, .experience {
+            margin-bottom: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #666;
+            color: #fff;
+            padding: 0.2em 0.5em;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+
+        .personal-info li{
+            flex-basis: 33%;
+            height: 35%;
+        }
+
+        .personal-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .personal-info img {
+            border-radius: 8px;
+            float: right;
+            width: 20%;
+        }
+
+        a {
+          text-decoration: none; 
+          color: #0077cc; 
+          transition: color 0.3s ease;
+        }
+
+        a:hover {
+          text-decoration: underline; 
+          color: #004466; 
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>黄小嵩</h1>
-    <img src="照片.jpg" alt="" width="200">
-    <hr>
-    <ul>
-        <li><b>性别：</b>男</li>
-        <li><b>电话：</b>15381069814</li>
-        <li><b>邮箱：</b>xudukongju@163.com</li>
-        <li><b>生日：</b>2004.05.20</li>
-    </ul>
-    <hr>
-    <h2>教育背景</h2>
-    <table border="1" width="100%">
-        <tr>
-            <td>时间</td>
-            <td>学校</td>
-            <td>工作经历</td>
-        </tr>
-        <tr>
-            <td>2019.9.1~2022.6.17</td>
-            <td>杭州第四中学</td>
-            <td>学习委员</td>
-        </tr>
-        <tr>
-            <td>2022.9.16~</td>
-            <td>上海对外经贸大学</td>
-            <td>学生事务中心值班助理</td>
-        </tr>
-    </table>
-    <hr>
-    <h2>工作经验</h2>
-    <ol>
-        <li>贫困助学金审核</li>
-        <li>实践手册分发</li>
-        <li>岗位值班</li>
-        <li>推送制作</li>
-    </ol>
+
+    <header>
+        <h1><span class="resume-title">个人简历</span></h1>
+    </header>
+    
+
+    <section>
+        <h2>个人信息</h2>
+        <div class="personal-info">
+            <ul>
+                <li><strong>姓名：</strong> 黄小嵩</li>
+                <li><strong>生日：</strong> 2004.05.20</li>
+                <li><strong>电话：</strong>15381069814</li>
+            </ul>
+            <ul>
+                <li><strong>籍贯：</strong> 浙江省杭州市</li>
+                <li><strong>邮箱：</strong>xudukongju@163.com</li>
+                <li><strong>微信：</strong> a367020255</li>
+            </ul>
+            <img src="照片.jpg" alt="Your Image">
+        </div>
+    </section>
+
+    <section class="education">
+        <h2>教育背景</h2>
+        <ul>
+            <li>
+                <strong>杭州第四中学：</strong> 2019.9.1~2022.6.17
+            </li>
+            <li>
+                <strong>上海对外经贸大学：</strong> 2022.9.16~至今
+            </li>
+        </ul>
+    </section>
+
+    <section class="experience">
+        <h2>个人经历</h2>
+        <ul>
+            <li>
+                <strong>学习：</strong> 
+            </li>
+            <li>
+                <p>大学生英语四级考试:565分</p>
+            </li>
+            <li>
+                <p>大学生英语六级考试:444分</p>
+            </li>
+            <li>
+                <p>获得中华笔译大赛初赛英汉互译【通用】竞赛单元优秀奖</p>
+            </li>
+            <li>
+                <p>获得中华笔译大赛初赛英汉互译【金融】竞赛单元优秀奖</p>
+            </li>
+            <li>
+                <p>获得“漫步城市 品味经典——阅读上海”征文活动三等奖</p>
+            </li>
+            <li>
+                <strong>志愿者：</strong> 
+            </li>
+            <li>
+                <p>参加了学校组织的青领活动</p>
+            </li>
+            <li>
+                <p>参加了学校组织的志愿献血活动</p>
+            </li>
+            <li>
+                <strong>工作：</strong> 
+            </li>
+            <li>
+                <p>担任学生事务中心值班助理</p>
+            </li>
+            <li>
+                <strong>思想：</strong> 
+            </li>
+            <li>
+                <p>现为共青团员</p>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>技能</h2>
+        <ul>
+          <li class="tag">HTML</li>
+          <li class="tag">CSS</li>
+          <li class="tag">JavaScript</li>
+          <li class="tag">C++</li>
+          <li class="tag">python</li>
+          <li class="tag">Ps</li>
+          <li class="tag">Pr</li>
+        </ul>
+      </section>
+      <section>
+        <h2>其他作业</h2>
+        <div>
+            <ul>
+              <li><a href="form.html">表单作业</a></li>
+              <li><a href="program.html">用JS输出棱形</a></li>
+            </ul>
+        </div>
+      </section>
+
+    <footer>
+        <p>联系方式:15381069814</p>
+    </footer>
+
 </body>
 </html>
